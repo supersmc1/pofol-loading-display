@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="loadingneonstyle.css">
   <link rel="stylesheet" href="loadingstyle2.css">
   <link rel="stylesheet" href="loadingkeyframe.css">
+  <link rel="stylesheet" href="onedisplay.css">
   <title>Document</title>
   <style>
+    *{margin: 0;
+      padding:0;}
   </style>
 </head>
 <body>
@@ -37,7 +40,7 @@
             <li></li><li></li><li></li><li></li><li></li><li></li>
             <li></li><li></li><li></li><li></li><li></li><li></li>
             <li></li><li></li><li></li><li></li><li></li><li></li>
-            <li></li><li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li>< /li><li></li><li></li><li></li>
           </ul>
         </div>
       </div>
@@ -49,5 +52,24 @@
       <div class="three"></div>
       <div class="four"></div>
     </div>
+    <div class="roottwo">
+      <div class="first"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+<script>
+  const root = document.querySelector('#root')
+  const body = document.body
+  const roottwo = document.querySelector('.roottwo')
+  const bodychd = document.body.children
+  console.log(bodychd) 
+  console.dir(body)
+  setTimeout(function(){
+    root.remove()
+  },5000)
+
+</script>
 </body>
 </html>
